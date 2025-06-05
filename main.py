@@ -17,7 +17,6 @@ if __name__ == "__main__":
 		new_image = bpy_extras.image_utils.load_image(os.path.abspath(filepath), dirname=os.path.abspath(filepath))
 	else:
 		print("No image argument provided")
-		input()
 		sys.exit(1)
 
 	for node in bpy.data.materials["textureMaterial"].node_tree.nodes:
@@ -29,6 +28,3 @@ if __name__ == "__main__":
 	frames = [Image.open(f"output/{img}") for img in sorted(os.listdir("output"))]
 
 	frames[0].save(new_filename, "GIF", save_all=True, append_images=frames[1:], duration=framerate, loop=0, disposal=2)
-else:
-	print("huh")
-	input()
