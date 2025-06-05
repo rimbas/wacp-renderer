@@ -7,6 +7,7 @@ pip install bpy
 
 # how to run
 1. On Windows - drag and drop an image onto the `render.bat`
+
 OR 
 ```
 py -3.11 main.py IMAGE_FILENAME
