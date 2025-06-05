@@ -4,7 +4,7 @@
 
 Needs Python 3.11 because Blender Python module (currently 4.4.0) is on Python 3.11. Make a virtualenv if not on 3.11.
 ```bash
-pip install bpy
+pip install bpy pillow
 ```
 
 # how to run
